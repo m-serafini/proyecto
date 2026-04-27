@@ -4,13 +4,13 @@ from selenium import webdriver
 # Fixture para el navegador
 @pytest.fixture 
 def navegador():
-    # Prepara el navegador antes de cada test y lo cierra al terminar
+    # Preparo el navegador antes de cada test y lo cierra al terminar
     driver = webdriver.Chrome()
-    # Maximiza la ventana para asegurar que todos los elementos sean visibles
+    # Maximizo la ventana para asegurar que todos los elementos sean visibles
     driver.maximize_window()
-    # El yield permite que el código después de esta línea se ejecute después de que el test haya terminado
+    # Uso yield para que el código después de esta línea se ejecute después de que el test haya terminado
     yield driver
-    # Cierra el navegador después de cada test
+    # Cierro el navegador después de cada test
     driver.quit()
 
 # Fixture para el nombre de usuario
