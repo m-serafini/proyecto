@@ -30,7 +30,7 @@ def solicitar_numero(orden):
             print("Entrada inválida. Por favor escribe un número.")
 
 def ejecutar_calculadora():
-    print("--- Calculadora para Testing ---")
+    print("--- Calculadora para Testing Automatizado ---")
     
     # Valido mis entradas individualmente
     n1 = solicitar_numero("primer")
@@ -64,5 +64,5 @@ def ejecutar_calculadora():
 
 
 #EJECUCIÓN:
-
-ejecutar_calculadora()
+if __name__ == "__main__":
+    ejecutar_calculadora()
