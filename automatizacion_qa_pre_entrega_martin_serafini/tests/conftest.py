@@ -13,12 +13,22 @@ def navegador():
     # Cierro el navegador después de cada test
     driver.quit()
 
-# Fixture para el nombre de usuario
+import pytest
+from selenium import webdriver
+
+@pytest.fixture 
+def navegador():
+    driver = webdriver.Chrome()
+    driver.maximize_window()
+    yield driver
+    driver.quit()
+
+# Fixtures individuales para los tests de la pre-entrega
 @pytest.fixture
 def usuario():
     return "standard_user"
 
-# Fixture para la contraseña
+# fixture para la contraseña
 @pytest.fixture
 def password():
     return "secret_sauce"
