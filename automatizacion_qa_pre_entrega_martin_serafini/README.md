@@ -30,7 +30,7 @@ El objetivo fue confirmar que el sitio impide el acceso y muestra el feedback co
 * Validación: En todos los casos se verifica el mensaje de error específico en el DOM: `h3[data-test="error"]`.
 
 ### Casos Extra: Login de Usuarios Aceptados
-Validación de acceso para toda la suite de usuarios oficiales de SauceDemo:
+Validación de acceso para toda la suite de usuarios oficiales de SauceDemo. Se añadió un temporizador para capturar el tiempo de logueo de cada caso testeado (captura la diferencia del usuario con glitch):
 * `standard_user`, `problem_user`, `performance_glitch_user`, `error_user`, `visual_user`.
 * Caso Especial: Validación del mensaje de bloqueo para `locked_out_user`.
 
@@ -39,12 +39,12 @@ Validación de acceso para toda la suite de usuarios oficiales de SauceDemo:
 automatizacion_qa_pre_entrega_martin_serafini/
 ├── tests/
 │   └── conftest.py            # Configuración de Fixtures (WebDriver, Credenciales)
-│   └── test_saucedemo.py      # Suite de pruebas (A, B y C)
+│   └── test_saucedemo.py      # Suite de pruebas (pre-entrega y casos adicionales)
 ├── utils/
 │   └── funciones.py           # Funciones de interacción con el navegador
 ├── reports/
-│   └── reporte.html           # Reporte de ejecución (Evidencia)
-├── requirements.txt           # Dependencias del proyecto
+│   └── reporte.html           # Reporte de ejecución
+├── requirements.txt           # Dependencias del proyecto (incluye N° version de c/libreria)
 └── README.md                  # Documentación
 ```
 
