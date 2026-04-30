@@ -1,5 +1,6 @@
 # Pre-Entrega Proyecto de Automatización QA - SauceDemo
 **Curso:** Automatizacion QA
+
 **Autor:** Martin Nicolas Serafini
 ---
 
@@ -37,7 +38,7 @@ Validación de acceso para toda la suite de usuarios oficiales de SauceDemo:
 ```text
 automatizacion_qa_pre_entrega_martin_serafini/
 ├── tests/
-│   └── conftest.py                # Configuración de Fixtures (WebDriver, Credenciales)
+│   └── conftest.py            # Configuración de Fixtures (WebDriver, Credenciales)
 │   └── test_saucedemo.py      # Suite de pruebas (A, B y C)
 ├── utils/
 │   └── funciones.py           # Funciones de interacción con el navegador
